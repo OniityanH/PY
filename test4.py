@@ -7,9 +7,9 @@ def log_fb():
     br.get('https://www.facebook.com/')
     time.sleep(3)
     user = br.find_element_by_css_selector('#email')
-    user.send_keys('woaibeiqi@outlook.com')
+    user.send_keys('email')
     password=br.find_element_by_css_selector('#pass')
-    password.send_keys('Zhuyifei19930417')
+    password.send_keys('pass')
     log=br.find_element_by_css_selector('#u_0_5')
     log.click()
 

@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+
+
 def display(max_page):
     page = 1
     required_search= input("请输入想搜索的bilibili内容：")
@@ -17,4 +19,5 @@ def display(max_page):
             print(href)
         page += 1
 
-display(2)
+max_page = input("请输入最大页数：")
+display(int(max_page))
